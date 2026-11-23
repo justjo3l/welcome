@@ -1,0 +1,12 @@
+{
+  "name": "joel-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An interactive portfolio for a software engineer working across frontend, AI, cloud, and product systems.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

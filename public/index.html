@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f04335" />
+    <meta
+      name="description"
+      content="Joel — software engineer and technical lead building frontend, cloud and AI systems."
+    />
+    <title>Joel — Software Engineer / Technical Lead</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=17" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"><span></span></div>
+
+    <div class="loader" id="loader" role="status" aria-live="polite">
+      <div class="loader-burst"></div>
+      <div class="loader-copy">
+        <p>Initializing profile</p>
+        <h1>JOEL<span>_</span></h1>
+        <div class="load-track"><i id="loadBar"></i></div>
+        <div class="loader-meta">
+          <b id="loadPercent">00%</b><span>DXB → SYD → EVERYWHERE</span>
+        </div>
+      </div>
+      <button class="skip-loader" id="skipLoader">Skip intro</button>
+    </div>
+
+    <header class="topbar">
+      <a class="brand magnetic" href="#home" aria-label="Joel, home"
+        ><span>J</span><b>JOEL.DEV</b></a
+      >
+      <nav aria-label="Main navigation">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="navList"
+        >
+          MENU
+        </button>
+        <div id="navList" class="nav-list">
+          <a href="#profile">Profile</a>
+          <a href="#work">Work</a>
+          <a href="#lab">Lab</a>
+          <a href="#story">Story</a>
+          <a href="#quests">Quests</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <button
+        class="sound-toggle"
+        id="soundToggle"
+        aria-pressed="false"
+        title="Ambient sound coming soon"
+      >
+        <span class="bars"><i></i><i></i><i></i><i></i></span>
+        <b>SOUND OFF</b>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero panel" id="home" data-theme="red">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="game-hud reveal">
+          <span>PROFILE // 01</span><span>DXB · UAE</span
+          ><span>STATUS: AVAILABLE</span>
+        </div>
+        <div class="start-layout">
+          <div class="start-identity reveal">
+            <p class="eyebrow">Software Engineer / Technical Lead</p>
+            <p class="save-label">SELECT PROFILE</p>
+            <h1 class="start-name">JOEL<span>_</span></h1>
+            <div class="player-card">
+              <span class="player-avatar">J</span>
+              <div>
+                <b>FULL-STACK / CLOUD / AI</b
+                ><small>UNSW SOFTWARE ENGINEERING · CLASS OF 2026</small>
+              </div>
+            </div>
+            <p class="start-summary">
+              Frontend polish. AI intelligence. Production discipline. Building
+              ambitious products across Australia and the UAE.
+            </p>
+          </div>
+          <nav class="game-menu reveal" aria-label="Portfolio start menu">
+            <p>MAIN MENU</p>
+            <a href="#work" class="game-option selected" data-preview="work"
+              ><span>01</span><b>START</b><small>Enter selected work</small></a
+            >
+            <a href="#lab" class="game-option" data-preview="lab"
+              ><span>02</span><b>LOADOUT</b><small>View capabilities</small></a
+            >
+            <a href="#story" class="game-option" data-preview="story"
+              ><span>03</span><b>STORY</b><small>Review field log</small></a
+            >
+            <a href="#contact" class="game-option" data-preview="contact"
+              ><span>04</span><b>CONNECT</b
+              ><small>Begin a new mission</small></a
+            >
+          </nav>
+        </div>
+        <div class="start-prompt reveal">
+          <i></i><span>CHOOSE A ROUTE</span><b>ENTER TO CONFIRM</b>
+        </div>
+        <div class="hero-sigil" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="eye">J</div>
+        </div>
+        <div class="ticker" aria-hidden="true">
+          <div>
+            REACT ✦ NEXT.JS ✦ TYPESCRIPT ✦ COMPUTER VISION ✦ CLOUD ✦ PRODUCT
+            ENGINEERING ✦ REACT ✦ NEXT.JS ✦ TYPESCRIPT ✦ COMPUTER VISION ✦ CLOUD
+            ✦ PRODUCT ENGINEERING ✦
+          </div>
+        </div>
+      </section>
+
+      <section class="manifesto panel" id="profile" data-theme="cream">
+        <div class="section-mark">01 / PROFILE</div>
+        <p class="kicker reveal">Not a one-lane engineer.</p>
+        <h2 class="reveal">
+          I bridge the gap between <em>bold interfaces</em> and the invisible
+          systems that make them work.
+        </h2>
+        <div class="manifesto-grid">
+          <div class="profile-note reveal">
+            <div class="mini-avatar">J</div>
+            <p>
+              UNSW Software Engineering graduate with experience across
+              Australia and the UAE.
+            </p>
+          </div>
+          <div class="stat-grid">
+            <article class="stat reveal">
+              <strong>84.8<span>%</span></strong>
+              <p>F1 drone detection</p>
+            </article>
+            <article class="stat reveal">
+              <strong>91.3<span>%</span></strong>
+              <p>IDF1 tracking</p>
+            </article>
+            <article class="stat reveal">
+              <strong>3<span>+ yrs</span></strong>
+              <p>Teaching computer vision</p>
+            </article>
+            <article class="stat reveal">
+              <strong>2022</strong>
+              <p>UNSW Dean's List</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="work panel" id="work" data-theme="ink">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-mark">02 / SELECTED MISSIONS</span>
+            <h2>THE WORK</h2>
+          </div>
+          <p>Select a mission. Each project opens as its own scene.</p>
+        </div>
+        <div
+          class="project-selector"
+          role="tablist"
+          aria-label="Select a project"
+        >
+          <button class="active" data-project="0" role="tab">
+            <span>01</span> DRONE
+          </button>
+          <button data-project="1" role="tab"><span>02</span> SIFT</button>
+          <button data-project="2" role="tab"><span>03</span> SPONTY</button>
+          <button data-project="3" role="tab"><span>04</span> THEMIS</button>
+        </div>
+        <div class="project-list">
+          <article
+            class="project project-drone active-project reveal"
+            tabindex="0"
+          >
+            <div class="project-index">THESIS / 2025</div>
+            <div class="project-visual drone-visual" aria-hidden="true">
+              <div class="radar"><i></i><b></b><span></span></div>
+              <div class="target-box">DRONE_01 <small>0.887</small></div>
+            </div>
+            <div class="project-copy">
+              <p>COMPUTER VISION · YOLO11 · DEEPSORT</p>
+              <h3>Drone Detection<br />& Tracking</h3>
+              <p>
+                Deep-learning research for detecting and tracking unauthorised
+                drones—combining cross-validation, weighted boxes fusion and
+                multi-object tracking.
+              </p>
+              <div class="project-metrics">
+                <span><b>88.7%</b> mAP@0.5</span><span><b>84.6%</b> MOTA</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-sift reveal" tabindex="0">
+            <div class="project-index">AI SYSTEM / 2026</div>
+            <div class="project-visual pipeline-visual" aria-hidden="true">
+              <span>LEAD</span><i></i><span>VERIFY</span><i></i
+              ><span>READY</span>
+            </div>
+            <div class="project-copy">
+              <p>TYPESCRIPT · POSTGRESQL · REDIS · BULLMQ</p>
+              <h3>Sift</h3>
+              <p>
+                An asynchronous enrichment and email-verification pipeline built
+                for resilient, multi-account prospecting workflows.
+              </p>
+              <div class="classified">
+                INTERNAL BUILD · PUBLIC DETAILS LIMITED
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-sponty reveal" tabindex="0">
+            <div class="project-index">PRODUCT / 2026</div>
+            <div class="project-visual map-visual" aria-hidden="true">
+              <div class="map-lines"></div>
+              <i class="pin one"></i><i class="pin two"></i
+              ><i class="pin three"></i>
+              <div class="food-card">GOOD FOOD<br /><b>THIS WAY</b></div>
+            </div>
+            <div class="project-copy">
+              <p>FASTIFY · SUPABASE · REDIS · VERCEL</p>
+              <h3>Sponty</h3>
+              <p>
+                A restaurant discovery experience across map, list and swipe
+                views—with a cache-aware API balancing freshness and external
+                usage.
+              </p>
+            </div>
+          </article>
+
+          <article class="project project-themis reveal" tabindex="0">
+            <div class="project-index">AI EXPERIENCE / PRIVATE</div>
+            <div class="project-visual themis-visual" aria-hidden="true">
+              <div class="orb">?</div>
+              <p>REFLECT<br />RECOGNISE<br />REWRITE</p>
+            </div>
+            <div class="project-copy">
+              <p>NEXT.JS · FASTAPI · GEMINI · CLOUD RUN</p>
+              <h3>Themis</h3>
+              <p>
+                An AI-supported reflective Q&A experience with structured
+                response analysis, authentication and multi-environment
+                deployment.
+              </p>
+              <div class="classified">
+                PRIVATE PROJECT · APPROVED SUMMARY ONLY
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="lab panel" id="lab" data-theme="yellow">
+        <div class="section-mark">03 / CAPABILITY DECK</div>
+        <div class="lab-layout">
+          <div class="lab-copy reveal">
+            <p class="kicker">Choose a lens.</p>
+            <h2>ONE BUILDER.<br /><span>FOUR MODES.</span></h2>
+            <p>Hover or tap a mode to see the stack behind it.</p>
+          </div>
+          <div class="mode-deck">
+            <button class="mode-card active" data-mode="frontend">
+              <span>01</span><b>FRONTEND</b
+              ><small>Interfaces with intent</small>
+            </button>
+            <button class="mode-card" data-mode="ai">
+              <span>02</span><b>AI / CV</b
+              ><small>Intelligence that ships</small>
+            </button>
+            <button class="mode-card" data-mode="systems">
+              <span>03</span><b>SYSTEMS</b><small>Built to stay standing</small>
+            </button>
+            <button class="mode-card" data-mode="product">
+              <span>04</span><b>PRODUCT</b><small>Outcomes over output</small>
+            </button>
+          </div>
+        </div>
+        <div class="skill-console reveal" id="skillConsole">
+          <div><span>ACTIVE MODE</span><b id="modeName">FRONTEND</b></div>
+          <p id="modeDescription">
+            Visual systems that feel expressive without sacrificing speed,
+            accessibility or clarity.
+          </p>
+          <ul id="modeSkills">
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Svelte</li>
+            <li>Vue</li>
+            <li>Tailwind</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="story panel" id="story" data-theme="blue">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-mark">04 / FIELD LOG</span>
+            <h2>THE STORY<br />SO FAR</h2>
+          </div>
+          <p>
+            Engineering, leadership and teaching—each sharpening the others.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <time>2026 — NOW</time>
+            <div>
+              <h3>Technical Lead · Nexfolio</h3>
+              <p>
+                Leading engineering across client-facing platforms, portals,
+                public APIs and cloud infrastructure.
+              </p>
+            </div>
+            <span>SYD / REMOTE</span>
+          </article>
+          <article class="timeline-item reveal">
+            <time>2026</time>
+            <div>
+              <h3>Software Engineer · Ecosense</h3>
+              <p>
+                AI and automation systems for prospecting, CRM workflows and
+                support operations.
+              </p>
+            </div>
+            <span>DUBAI</span>
+          </article>
+          <article class="timeline-item reveal">
+            <time>2023 — 2026</time>
+            <div>
+              <h3>Computer Vision Tutor · UNSW</h3>
+              <p>
+                Made complex computer vision concepts practical for the next
+                wave of engineers.
+              </p>
+            </div>
+            <span>SYDNEY</span>
+          </article>
+          <article class="timeline-item reveal">
+            <time>2024 — 2026</time>
+            <div>
+              <h3>Internships & Community</h3>
+              <p>
+                ConnectOne Club, Moro Hub and UNSW Software Development Society.
+              </p>
+            </div>
+            <span>AU / UAE</span>
+          </article>
+          <article class="timeline-item reveal">
+            <time>2026</time>
+            <div>
+              <h3>B.E. Software · UNSW</h3>
+              <p>
+                Graduated after a degree spanning software systems, research and
+                technical leadership.
+              </p>
+            </div>
+            <span>COMPLETE</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="sidequests panel" id="quests" data-theme="cream">
+        <div class="section-mark">05 / SIDE QUESTS</div>
+        <h2 class="reveal">SMALL BUILDS.<br /><span>REAL CURIOSITY.</span></h2>
+        <div class="quest-track reveal">
+          <div class="quest-card wanted">
+            <span>DAILY PUZZLE</span>
+            <div class="goldle-emblem" aria-label="Goldle original game emblem">
+              <i>G</i><b>×6</b>
+            </div>
+            <h3>Goldle</h3>
+            <p>Browser game</p>
+            <b>PLAYFUL SYSTEMS</b>
+          </div>
+          <div class="quest-card">
+            <span>UTILITY</span>
+            <div class="quest-icon bars-art"><i></i><i></i><i></i><i></i></div>
+            <h3>Finance Monitor</h3>
+            <p>Signals from noise</p>
+            <b>DATA / ANALYTICS</b>
+          </div>
+          <div class="quest-card">
+            <span>ORIGIN STORY</span>
+            <div class="quest-icon film-art">MOV<br /><i>→</i><br />MP4</div>
+            <h3>Personal Converter</h3>
+            <p>A daily annoyance, solved</p>
+            <b>BUILD WHAT YOU NEED</b>
+          </div>
+          <div class="quest-card">
+            <span>CAMPUS</span>
+            <div class="quest-icon circles-art"><i></i><i></i><i></i></div>
+            <h3>UNSW Circles</h3>
+            <p>Student web platform</p>
+            <b>COMMUNITY TECH</b>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact panel" id="contact" data-theme="red">
+        <div class="contact-sun" aria-hidden="true"></div>
+        <p class="kicker reveal">The next mission starts here.</p>
+        <h2 class="reveal">
+          LET'S BUILD<br /><span>SOMETHING</span><br />UNIGNORABLE.
+        </h2>
+        <p class="contact-note reveal">
+          Open to conversations about frontend engineering, AI systems,
+          technical leadership and ambitious product work.
+        </p>
+        <div class="contact-actions reveal">
+          <button
+            class="primary-cta magnetic"
+            id="copyEmail"
+            data-email="lejoeljose@gmail.com"
+          >
+            COPY EMAIL <span>↗</span>
+          </button>
+          <span class="placeholder-note"
+            >Replace the placeholder email in <code>index.html</code></span
+          >
+        </div>
+        <footer>
+          <p>Built with curiosity in Dubai.</p>
+          <p>© <span id="year"></span> Joel</p>
+          <a href="#home">Back to top</a>
+        </footer>
+      </section>
+    </main>
+
+    <div class="page-wipe" aria-hidden="true"><span>SHIFTING MODE</span></div>
+    <div class="controller-hints" aria-hidden="true">
+      <span><i>W/S</i> SELECT</span><span><i>ENTER</i> CONFIRM</span
+      ><span><i>ESC</i> HOME</span>
+    </div>
+    <script src="/script.js?v=17"></script>
+  </body>
+</html>
