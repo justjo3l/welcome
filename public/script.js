@@ -1,6 +1,17 @@
 const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 
+// Show Dubai only for viewers using the UAE timezone; Sydney is the safe default.
+const viewerLocation = $("#viewerLocation");
+try {
+  const viewerTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const isUaeViewer = viewerTimeZone === "Asia/Dubai";
+  viewerLocation.textContent = isUaeViewer ? "DUBAI · UAE" : "SYDNEY · AUSTRALIA";
+  document.documentElement.dataset.viewerRegion = isUaeViewer ? "uae" : "international";
+} catch {
+  viewerLocation.textContent = "SYDNEY · AUSTRALIA";
+}
+
 const loader = $("#loader");
 const loadBar = $("#loadBar");
 const loadPercent = $("#loadPercent");
